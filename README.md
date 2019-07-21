@@ -1,5 +1,6 @@
 # Apocalypse
 Controls:
+
 A: Spin left
 
 D: Spin right
