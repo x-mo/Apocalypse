@@ -1,0 +1,100 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-image:url(background1.jpg);
+    background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#footerleft{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+#footerright{
+    position: absolute;
+    bottom: 0px;
+    right: 5%;
+}
+
+#playnow, #controllers, #credits{
+    animation-name: playnow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#playnow{
+    width: 300px; 
+  
+}
+#controllers{
+    width: 100px;
+    }
+#credits{
+    width: 60px;
+    margin-right: 60px;
+}
+
+@keyframes playnow{
+    0%{transform: scale(1);}
+    25%{transform: scale(1.02);}
+    50%{transform: scale(1.05);}
+    75%{transform: scale(1.02);}
+    100%{transform: scale(1);}
+}
+#zombie1{
+    position: fixed;
+    transform: scale(.5);
+    bottom:20%;
+    left:10%;
+}
+#zombie2{
+    position: fixed;
+    transform: scale(.5); 
+    bottom:20%;
+    right:10%;
+}
+#popupcontainer{
+    z-index: 2;
+    display: none;
+position: absolute; 
+top: 10%; 
+left: 50%;
+transform: translate(-50%);
+
+}
+#popup{
+
+width: 100%;
+}
+
+
+#close{
+    z-index: 3;
+    position: fixed;
+    top:30px;
+    right:25%;
+    display: none;
+    transform: scale(1.2) ;
+}   
+#blacklayer{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .9);
+}
+#gamemakers{
+    margin-top: 5%;
+    font-size: 25px;
+     text-align: center;
+     line-height: 4;
+     text-transform: uppercase;
+    display: none;
+    color: white;
+}
